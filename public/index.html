@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+        integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-imagen">
+                <img src="./img/lobo.png" alt="logo">
+            </div>
+            <div class="logo-texto">
+                <h1>CentroGaming</h1>
+            </div>            
+        </div>
+        <!-- <nav>
+            <ul>
+                <li><a href="/index.html">Agregar</a></li>
+                <li><a href="/api/games">Ver</a></li>
+            </ul>
+        </nav> -->
+    </header>
+    <main>
+        <div class="container">
+            <div class="form">
+                <h1>Nuevo Juego</h1>
+                <form onsubmit="return addGame()" method="post">
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="description">Descripción:</label>
+                        <input type="text" name="description" id="description">
+                    </div>
+                    <div>
+                        <label for="image">Imagen:</label>
+                        <input type="text" name="image" id="image">
+                    </div>
+                    <div>
+                        <label for="plataform">Plataforma:</label>
+                        <select name="plataform" id="plataform">
+                            <option value="" selected>Elija una opción</option>
+                            <option value="Steam">Steam</option>
+                            <option value="Epic">Epic</option>
+                            <option value="Blizard">Blizard</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="stock">Stock:</label>
+                        <input type="number" name="stock" id="stock">
+                    </div>
+                    <div>
+                        <label for="price">Precio:</label>
+                        <input type="number" name="price" id="price">
+                    </div>
+                    <div>
+                        <label for="state">State:</label>
+                        <input type="checkbox" name="state" id="state">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>                
+            </div>     
+            <div id="listaJuegos"></div>       
+        </div>
+        <div class="container">
+            <div class="form">
+                <h2>Nuevo Mensaje</h1>
+                <form onsubmit="return addMsg()" method="post">                    
+                    <div>
+                        <label for="correo">Correo:</label>
+                        <input type="text" name="correo" id="correo">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <input type="text" name="mensaje" id="mensaje">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>                
+            </div>
+            <div id="listaMensajes"></div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+
+</html>

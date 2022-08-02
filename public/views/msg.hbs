@@ -1,0 +1,14 @@
+<h2>Lista de Mensajes</h2>
+<div class="listMsg">
+    {{#each mensaje}}
+    <div class="msg" id={{this.id}}>        
+        <div class="msg-correo">
+            <h3>{{this.email}}</h3>
+            <p> ({{this.date}}):</p>
+        </div>
+        <div class="msg-mensaje">
+            <p>{{this.message}}</p>
+        </div>
+    </div>
+    {{/each}}
+</div>

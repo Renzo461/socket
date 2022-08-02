@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    color: white;
+    height: 4rem;
+    padding: 0 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 3.5rem;
+}
+
+.logo-texto {
+    margin-left: 10px;
+    color: aqua;
+}
+
+.logo-texto h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: aquamarine;
+}
+
+main {
+    flex: 1;
+    background-color: rgb(250, 250, 250);
+    
+}
+
+.form {
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 800px;
+    margin: auto;
+    background-color: white;
+}
+
+.form form {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form form div {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form form div label {
+    width: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(13, 47, 80);
+}
+
+.form form div input {
+    flex: 1;
+    height: 22px;
+}
+.container{
+    width: 1000px;
+    padding: 1rem;    
+    margin: auto;
+    margin-top: 1rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+/* listaJuegos */
+#listaJuegos{
+    margin-top: 2rem;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;    
+}   
+
+.juego {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;    
+    margin: .5rem;
+    width: 225px;
+    text-align: center;
+    background-color: white;
+}
+
+.juego-imagen {
+    position: relative;    
+}
+
+.juego-imagen img {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    width: 100%;
+    height: 315px;
+}
+
+.juego-titulo {
+    padding: 5px 0;
+}
+
+.juego-titulo h2 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.juego-precio {
+    border-radius: .5rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3), 3px 3px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6296FC;
+}
+
+/* lista mensajes */
+#listaMensajes{
+    margin-top: 2rem;
+}
+.msg{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+.msg-correo{    
+    display: flex;
+}
+.msg-correo h3{
+    font-size: 14px;
+    margin-right: .5rem;
+    color: blue;
+}
+.msg-correo p{
+    font-size: 14px;
+    color: crimson;
+}
+.msg-mensaje{
+    margin-left: 1rem;
+}

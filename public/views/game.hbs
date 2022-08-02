@@ -1,0 +1,16 @@
+<h2>Lista de Juegos</h2>
+<div class="list">
+    {{#each juego}}
+    <div class="juego" id={{this.id}}>
+        <div class="juego-imagen">
+            <img src={{this.image}} alt={{this.name}}>
+            <div class="juego-precio">
+                <p>${{this.price}}</p>
+            </div>
+        </div>
+        <div class="juego-titulo">
+            <h2>{{this.name}}</h2>
+        </div>
+    </div>
+    {{/each}}
+</div>

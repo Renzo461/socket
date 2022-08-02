@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Hitman 3",
+        "description": "Hitman 3",
+        "plataform": "Steam",
+        "image":"https://firebasestorage.googleapis.com/v0/b/centro-gaming.appspot.com/o/hitman3.jpg?alt=media&token=34bff856-c3ce-462a-b38b-2b8dcb75a5b9",
+        "stock": 10,
+        "price": 40,
+        "state": true
+    },
+    {
+        "id": 2,
+        "name": "Dark Souls 3",
+        "description": "Dark Souls 3",
+        "plataform": "Steam",
+        "image":"https://firebasestorage.googleapis.com/v0/b/centro-gaming.appspot.com/o/darkSouls3-min.jpg?alt=media&token=eae7e593-82e2-4a15-86d8-8b67f80a37fa",
+        "stock": 5,
+        "price": 60,
+        "state": false
+    },
+    {
+        "id": 3,
+        "name": "Bioshock Infinite",
+        "description": "Bioshock Infinite",
+        "plataform": "Blizard",
+        "image": "https://firebasestorage.googleapis.com/v0/b/centro-gaming.appspot.com/o/bioshockInfinite-min.jpg?alt=media&token=8ee6c7d0-95f4-4224-ad1f-669b4c5a3fc2",
+        "stock": 50,
+        "price": 50,
+        "state": true
+    }
+]
